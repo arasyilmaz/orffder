@@ -12,7 +12,7 @@
                     type="button" id="menu_button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="mdi mdi-menu" style="color: black;"></i>
                     </button>
-                    <span style="
+                    <!-- <span style="
                     height: 27px;
                     width: 25px;
                     float: right;
@@ -32,7 +32,7 @@
                     background-size: cover;
                     margin-top: 2px;
                     background-image: url('/assets/images/tr.png');
-                    "></span>
+                    "></span> -->
                     <button style="padding: 0px 10px 0px 5px;margin-right: 15px;font-weight: 500;" type="button" [class]="(currentUrl == '' || currentUrl == '/') ? 'btn btn-custom navbar-btn btn-rounded waves-effect waves-light float-right home-button' : 'btn btn-custom navbar-btn btn-rounded waves-effect waves-light float-right contact-button'"> <i style="color: #000000;" class="mdi mdi-account-circle"></i> Üye Girişi</button>
                 </div>
             </div>  
@@ -43,17 +43,17 @@
                             <a data="id_home" (click)="toggleMenu()" [ngx-scroll-to]="'#header'" routerLink="/" class="nav-link">Anasayfa</a>
                         </li>
                         <li class="nav-item">
-                            <a data="id_features" (click)="toggleMenu()" [ngx-scroll-to]="'#features'" class="nav-link">Hakkımızda</a>
+                            <a data="id_features" (click)="toggleMenu()" [ngx-scroll-to]="'#features'" routerLink="/" class="nav-link">Hakkımızda</a>
                         </li>
                         <li class="nav-item">
                             <a data="id_education" (click)="toggleMenu()" [ngx-scroll-to]="'#education'" routerLink="/education" class="nav-link">Eğitim Programları</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a data="id_about"(click)="toggleMenu()" [ngx-scroll-to]="'#about'" class="nav-link">Etkinlik Takvimi</a>
                         </li>
                         <li class="nav-item">
                             <a data="id_pricing" (click)="toggleMenu()" [ngx-scroll-to]="'#pricing'" class="nav-link">Orffdergi</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a data="id_blog" (click)="toggleMenu()" [ngx-scroll-to]="'#blog'" class="nav-link">Üyelikler</a>
                         </li>
@@ -83,12 +83,12 @@
                             <li class="nav-item">
                                 <a data="id_services"  [ngx-scroll-to]="'#services'" class="nav-link">Eğitim Programları</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a data="id_about" [ngx-scroll-to]="'#about'" class="nav-link">Etkinlik Takvimi</a>
                             </li>
                             <li class="nav-item">
                                 <a data="id_pricing"  [ngx-scroll-to]="'#pricing'" class="nav-link">Orffdergi</a>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <a data="id_blog"  [ngx-scroll-to]="'#blog'" class="nav-link">Üyelikler</a>
                             </li>
